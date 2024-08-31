@@ -1,4 +1,4 @@
-
+import Card from './Card'
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <p className='text-3xl font-bold underline'>
         Hello World!
       </p>
+      <Card/>
     </>
   )
 }
