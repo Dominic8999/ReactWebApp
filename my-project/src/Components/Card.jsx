@@ -1,11 +1,14 @@
 
 function Card({children}){
     return(
-        <div className="container mx-auto box-border h-32 w-32 px-4 m-56 border-4">
-            <div className="border-y-sky-100 text-green-500 underline">
-                <p>Hello World</p>
-            </div>
-            <div className="underline text-blue-900">
+        <div className="
+        container shadow-xl
+        box-border border-4 border-cyan-600 border-double 
+        size-52 mx-auto my-10 ">
+            <div className="
+            flex justify-between mx-4
+            text-blue-500">
+                <p>Hello </p>
                 {children}
             </div>
         </div>
