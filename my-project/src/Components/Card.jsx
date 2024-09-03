@@ -1,14 +1,43 @@
+import doggie from '../assets/doggie.svg'
+import catto from '../assets/catto.svg'
+
+let component_1, component_2;
+
+let components =[
+    component_1 = {
+        title: "a doggie",
+        image: doggie,
+        description: "A doggie likes to play with bones"
+    },
+    component_2 = {
+        title: "catto",
+        image: catto,
+        description: "A catto likes to play with fishes"
+    }
+]
+
 
 function Card({children}){
     return(
         <div className="
+        lg:w-48 lg:h-64
         container shadow-xl
         box-border border-4 border-cyan-600 border-double 
-        size-72 mx-auto my-10 ">
+        mx-auto my-10 ">
             <div className="
             flex flex-col m-2
-            text-blue-500">
+            text-center text-blue-500">
                 {children}
+                <div>
+                    <h3>{components[0].title}</h3>
+                    <img src={components[0].image} alt="" />
+                    <p>{components[0].description}</p>
+                </div>
+                <div>
+                    <h3>{components[1].title}</h3>
+                    <img src={components[1].image} alt="" />
+                    <p>{components[1].description}</p>
+                </div>
             </div>
         </div>
     )
