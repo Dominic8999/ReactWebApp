@@ -2,20 +2,23 @@ import { useState } from "react";
 
 export default function Alert(){
 
-    const [isClicked, setClicked] = useState(false)
+    const [content, setContent] = useState(null)
 
     function handleClick(){
-        setClicked(true)
+        setContent(
+        <div className="border border-red-500 border-5" >
+            <h2>Are you sure?</h2>
+            <button onClick={() => handleProceed()}>Proceed</button>
+        </div>)
     }
 
-    let content;
-    if (isClicked){
-        content = <p> Are you sure?</p>
+    function handleProceed(){
+        setContent(null)
     }
         return(
         <>
             {content}
-            <button>Delete</button>
+            <button onClick={() => handleClick()}>Delete</button>
         </>
     )
 }
