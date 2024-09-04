@@ -33,12 +33,12 @@ function Card({children}){
                 <div>
                     <h3 className='font-bold'>{components[0].title}</h3>
                     <img src={components[0].image} alt="" />
-                    <p>{components[0].description}</p>
+                    <p className='italic'>{components[0].description}</p>
                 </div>
                 <div>
-                    <h3>{components[1].title}</h3>
+                    <h3 className='font-bold'>{components[1].title}</h3>
                     <img src={components[1].image} alt="" />
-                    <p>{components[1].description}</p>
+                    <p className='italic'>{components[1].description}</p>
                 </div>
             </div>
         </div>
