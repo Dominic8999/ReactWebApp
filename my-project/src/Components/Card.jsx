@@ -20,7 +20,9 @@ let components =[
 function Card({children}){
     return(
         <div className="
+        relative
         lg:w-48 lg:h-64
+        md:w-32 md:h-50
         container shadow-xl
         box-border border-4 border-cyan-600 border-double 
         mx-auto my-10 ">
@@ -29,7 +31,7 @@ function Card({children}){
             text-center text-blue-500">
                 {children}
                 <div>
-                    <h3>{components[0].title}</h3>
+                    <h3 className='font-bold'>{components[0].title}</h3>
                     <img src={components[0].image} alt="" />
                     <p>{components[0].description}</p>
                 </div>
