@@ -1,6 +1,7 @@
 import Card from './Components/Card'
 import Alert from './Components/Alert'
 import List from './Components/List'
+import Input from './Components/Input'
 
 export let list  = [
   "Take a Walk",
@@ -20,6 +21,9 @@ function App() {
         <ul className="flex flex-col space-y-4 p-4 m-4">
           {list.map((item) => (<List text={item}/>))}
         </ul>
+        <div>
+          <Input className='text-black rounded' type="textarea" placeholder="type something here"/>
+        </div>
       </main>
     </>
   )
