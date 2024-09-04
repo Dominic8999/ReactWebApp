@@ -20,6 +20,7 @@ let components =[
 function Card({children}){
     return(
         <div className="
+        flex items-center justify-center min-h-screen
         relative
         lg:w-48 lg:h-64
         md:w-32 md:h-50

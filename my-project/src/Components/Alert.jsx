@@ -6,7 +6,9 @@ export default function Alert(){
 
     function handleClick(){
         setContent(
-        <div className="border border-red-500 border-5" >
+        <div className="
+        block
+        border border-red-500 border-5" >
             <h2>Are you sure?</h2>
             <button onClick={() => handleProceed()}>Proceed</button>
         </div>)
